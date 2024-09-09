@@ -1,0 +1,146 @@
+{% extends 'mangrove/base.html' %}
+
+{% block title %}
+Mangrove Products - Kadzuhoni Mangrove Conservation
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Production of Mangrove Products</h1>
+            <p class="lead">Sustainable Use of Mangroves for Livelihood and Conservation</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Mangrove Products</h2>
+                <p><strong>Kadzuhoni Mangrove Conservation</strong> works with local communities to produce and market a variety of mangrove-based products. By promoting sustainable harvesting and production techniques, we ensure that these products benefit both the environment and the livelihoods of our people.</p>
+                <p>These products include timber, honey from mangrove beekeeping, fish, and various handmade crafts derived from mangrove materials.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Mangrove Products" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Main Products</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Honey</h5>
+                            <p class="card-text">Produced from our beekeeping efforts, mangrove honey is rich in flavor and nutrients, harvested sustainably from local hives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Handmade Crafts</h5>
+                            <p class="card-text">We support artisans in creating unique, eco-friendly crafts from mangrove materials, including baskets, mats, and decorative items.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainable Timber</h5>
+                            <p class="card-text">Harvested under strict sustainable practices, our timber products are used for local construction while protecting mangrove forests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value-Added Products Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Value-Added Mangrove Products</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Our team is also developing value-added mangrove products, including processed fish, fuelwood, and charcoal alternatives from mangrove by-products. These items provide additional income streams for local families, supporting economic growth without compromising the mangrove ecosystem.</p>
+                <p>These innovations ensure that every part of the mangrove forest is utilized sustainably, adding value to our conservation and livelihood goals.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Value-Added Products" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact Section -->
+    <section class="bg-secondary text-white py-5">
+        <div class="container text-center">
+            <h2>Impact on the Community</h2>
+            <p>Our mangrove product initiatives have had a significant impact on the local community by providing sustainable livelihoods while promoting conservation.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Increased Incomes</h5>
+                            <p class="card-text">Our sustainable mangrove products have improved household incomes by creating marketable goods from natural resources.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Women Empowerment</h5>
+                            <p class="card-text">Women in the community play a central role in the production of crafts, enhancing their economic independence and status.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Environmental Awareness</h5>
+                            <p class="card-text">Through sustainable production practices, community members have gained a deeper appreciation of the importance of conserving mangroves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How You Can Get Involved Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">How You Can Get Involved</h2>
+        <p class="text-center">Interested in supporting our mangrove product initiatives? Here's how you can help:</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Purchase Our Products</h5>
+                        <p class="card-text">By buying our mangrove products, you contribute to the conservation efforts and help local communities thrive.</p>
+                        <a href="{% url "contact" %}" class="btn btn-success">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Volunteer</h5>
+                        <p class="card-text">Join our team in promoting sustainable production and conservation by volunteering your time and skills.</p>
+                        <a href="{% url "volunteer" %}" class="btn btn-success">Volunteer Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Donate</h5>
+                        <p class="card-text">Your financial support helps us expand our sustainable mangrove product initiatives and conservation work.</p>
+                        <a href="{% url "donate" %}" class="btn btn-success">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

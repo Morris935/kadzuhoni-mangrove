@@ -1,0 +1,129 @@
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+
+{% block title %}Mangrove Reforestation{% endblock %}
+{% block content %}
+    <!-- Page Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Mangrove Reforestation</h1>
+            <p class="lead">Restoring Coastal Ecosystems, Protecting the Future</p>
+        </div>
+    </header>
+
+    <!-- Why Reforestation Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Why Mangrove Reforestation is Important</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Mangroves provide a range of ecological, social, and economic benefits, including:</p>
+                <ul>
+                    <li><strong>Coastal Protection:</strong> Mangrove forests act as natural barriers against coastal erosion and storm surges.</li>
+                    <li><strong>Biodiversity:</strong> Mangroves support diverse species of fish, birds, and other wildlife.</li>
+                    <li><strong>Carbon Sequestration:</strong> Mangroves capture and store large amounts of carbon, reducing the effects of climate change.</li>
+                    <li><strong>Sustainable Livelihoods:</strong> Mangroves provide resources that support local livelihoods, such as fish and honey.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static "images/nursery-2.jpg" %}" alt="Mangrove Forest" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Reforestation Efforts Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Reforestation Efforts</h2>
+            <p class="text-center">Since our inception, we have planted over <strong>3,000 mangrove trees</strong> and established nurseries with <strong>5,000+ seedlings</strong>. Our key efforts include:</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Seedling Nurseries</h5>
+                            <p class="card-text">We cultivate thousands of seedlings to support our reforestation efforts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Community Involvement</h5>
+                            <p class="card-text">We engage local communities, providing training on mangrove planting and its benefits.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Scientific Monitoring</h5>
+                            <p class="card-text">Our team monitors reforestation sites regularly to ensure the health and growth of mangroves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planting Process Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">How We Plant Mangroves</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Our mangrove reforestation follows best practices to ensure high survival rates. The key steps are:</p>
+                <ul>
+                    <li><strong>Site Selection:</strong> Identifying degraded areas for restoration.</li>
+                    <li><strong>Seedling Preparation:</strong> Growing mangrove seeds in nurseries until ready for transplanting.</li>
+                    <li><strong>Planting:</strong> Transplanting seedlings to tidal zones and mudflats.</li>
+                    <li><strong>Monitoring and Maintenance:</strong> Regular monitoring and maintenance to ensure success.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static "images/nursery-4.jpg" %}" alt="Mangrove Planting" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Empowerment Section -->
+    <section class="bg-secondary text-white py-5">
+        <div class="container text-center">
+            <h2>Community Empowerment Through Reforestation</h2>
+            <p>By involving local communities in our reforestation efforts, we help create sustainable livelihoods and promote environmental stewardship.</p>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="container my-5" id="get-involved">
+        <h2 class="text-center mb-4">How You Can Help</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Volunteer</h5>
+                        <p class="card-text">Join us for a tree-planting day and make a direct impact in conserving the environment.</p>
+                        <a href="{% url 'volunteer' %}" class="btn btn-primary">Volunteer Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Donate</h5>
+                        <p class="card-text">Your donations help us expand our nurseries and reforestation efforts.</p>
+                        <a href="{% url 'donate' %}" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Spread the Word</h5>
+                        <p class="card-text">Raise awareness of the importance of mangrove conservation and encourage others to join our cause.</p>
+                        <a href="{% url 'impact' %}" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

@@ -1,0 +1,155 @@
+{% extends 'mangrove/base.html' %}
+
+{% block title %}
+advocacy and Policy Development - Kadzuhoni Mangrove Conservation
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Advocacy & Policy Development</h1>
+            <p class="lead">Shaping Policies for Sustainable Mangrove Conservation</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Advocacy Efforts</h2>
+                <p>
+                    <strong>Kadzuhoni Mangrove Conservation</strong> is dedicated to advocating 
+                    for policies that protect and restore mangrove ecosystems. We work closely with 
+                    Magarini CFA, government bodies like Kenya Forest Services (KFS), non-governmental organizations, and communities to shape 
+                    policies that promote sustainable development and environmental stewardship.
+                </p>
+                <p>
+                    Our advocacy efforts aim to raise awareness about the importance of mangroves 
+                    in coastal resilience, climate change mitigation, and biodiversity conservation.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Advocacy and Policy" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Development Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Policy Development Initiatives</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Protection Laws</h5>
+                            <p class="card-text">We work with local governments to develop and strengthen laws that ensure the long-term protection of mangrove forests.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Climate Change Policies</h5>
+                            <p class="card-text">Our research and advocacy contribute to climate change policies that emphasize the role of mangroves in carbon sequestration and coastal defense.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Community Land Rights</h5>
+                            <p class="card-text">We advocate for community-based land rights to ensure that local communities benefit from sustainable mangrove management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Advocacy Projects Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Current Advocacy Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Our current advocacy projects focus on creating a supportive policy environment that encourages mangrove conservation and restoration. We engage with policymakers at all levels to ensure that mangrove ecosystems are recognized as vital components of climate resilience and sustainable development.</p>
+                <p>We also collaborate with community leaders and organizations to ensure that policies reflect the needs and values of the people who rely on mangrove resources for their livelihoods.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Advocacy Projects" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Advocacy Highlights Section -->
+    <section class="bg-secondary text-white py-5">
+        <div class="container text-center">
+            <h2>Advocacy Highlights</h2>
+            <p>Our key advocacy achievements include:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Creation of New Protected Areas</h5>
+                            <p class="card-text">We successfully lobbied for the designation of new mangrove-protected areas along Kenya’s coast.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Community Involvement in Decision-Making</h5>
+                            <p class="card-text">We advocated for greater community participation in conservation decision-making processes, empowering local voices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Contributions to Climate Policies</h5>
+                            <p class="card-text">Our organization contributed to national climate policies that highlight the role of mangroves in carbon capture and coastal protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How You Can Support Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">How You Can Support Our Advocacy Work</h2>
+        <p class="text-center">Here’s how you can support our advocacy and policy development initiatives:</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Join Our Campaigns</h5>
+                        <p class="card-text">Get involved in our advocacy campaigns to raise awareness about the need for strong mangrove conservation policies.</p>
+                        <a href="{% url "volunteer" %}" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Partner with Us</h5>
+                        <p class="card-text">We welcome collaboration with policy makers, organizations, and individuals passionate about sustainable development.</p>
+                        <a href="{% url "partner" %}" class="btn btn-primary">Partner with Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Donate</h5>
+                        <p class="card-text">Your donations help us continue our work in shaping policies that benefit mangrove ecosystems and local communities.</p>
+                        <a href="{% url "donate" %}" class="btn btn-primary">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

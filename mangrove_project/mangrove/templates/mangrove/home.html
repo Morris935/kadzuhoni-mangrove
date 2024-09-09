@@ -1,0 +1,67 @@
+<!-- hotel/templates/hotel/home.html -->
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+
+{% block title %}Kadzuhoni-Mangrove{% endblock %}
+
+{% block content %}
+    <div class="container-fluid bg-light">
+        <div class="container mt-4">
+            <div class="position-relative background-container">
+                {% comment %} <img src="{% static "images/mangrove-3.jfif" %}" class="img-fluid" alt="Example Image"> {% endcomment %}
+                <div class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                    <span>
+                        <h2 class="text-white fs-1">Kadzhuhoni Mangrove Conservation <br>
+                        (Community Based Organization) </h2>
+                        <hr>
+                        <p class="fs-4">Dedicated to the protection, conservation, and restoration of our 
+                        precious mangrove ecosystems. We are a community-driven organization 
+                        focused on preserving these vital coastal forests, which are essential 
+                        for biodiversity, climate regulation, and the livelihoods of coastal 
+                        communities.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-ight my-5 d-flex flex-row flex-wrap">
+            {% comment %} No. of trees planted {% endcomment %}
+            <div class="card p-2 mx-2 col-sm-6 col-md-4 mb-3" style="width: 18rem;">
+                <img src="{% static "images/mangrove-4.jpg" %}" class="card-img-top img-fluid rounded shadow" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">
+                        <h5 class="card-title">Mangrove Tree Planted <br/> <hr> <span class="badge bg-secondary fs-2">{{ total_planted }}</span></h5>
+                    </a>
+                </div>
+            </div>
+            {% comment %} No. of mangrove seedlings {% endcomment %}
+            <div class="card -2 mx-2 col-sm-6 col-md-4 mb-3" style="width: 18rem;">
+                <img src="{% static "images/mangrove-2.jfif" %}" class="card-img-top img-fluid rounded shadow" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">
+                        <h5 class="card-title">Mangrove Seedlings Available <br/> <hr> <span class="badge bg-secondary fs-2">2,000</span></h5>
+                    </a>
+                </div>
+            </div>
+            {% comment %} No. of mangrove seedlings {% endcomment %}
+            <div class="card -2 mx-2 col-sm-6 col-md-4 mb-3" style="width: 18rem;">
+                <img src="{% static "images/mangrove-1.jfif" %}" class="card-img-top img-fluid rounded shadow" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">
+                        <h5 class="card-title">Estimated Ngomeni Mangrove Forest Area <br/> <hr> <span class="badge bg-secondary fs-2">640 ha</span></h5>
+                    </a>
+                </div>
+            </div>
+            {% comment %} No. of mangrove seedlings {% endcomment %}
+            <div class="card -2 mx-2 col-sm-6 col-md-4 mb-3" style="width: 18rem;">
+                <img src="{% static "images/mangrove-1.jfif" %}" class="card-img-top img-fluid rounded shadow" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">
+                        <h5 class="card-title">Estimated Deforestrated Area <br/> <hr> <span class="badge bg-secondary fs-2">20 ha</span></h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

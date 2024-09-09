@@ -1,0 +1,115 @@
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+
+{% block title %}Our Impact{% endblock %}
+{% block content %}
+    <header class="bg-success text-white text-center py-4">
+        <h1>Our Impact</h1>
+        <p>Discover the positive changes we've made for the environment and our community</p>
+    </header>
+
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Mangrove Reforestation and Nurseries</h2>
+                <p>
+                    We have successfully planted over <strong>7,000 mangrove trees</strong>, 
+                    contributing to the preservation of our coastal ecosystem. Our nurseries contain over 
+                    <strong>45,000 seedlings</strong>, ensuring the sustainability of our mangrove 
+                    restoration efforts.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static "images/nursery-2.jpg" %}" alt="Mangrove Trees" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h2>Formation of Community Groups</h2>
+        <p>We have formed five community groups focused on sustainable development and environmental conservation:</p>
+
+        <div class="row my-4">
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadzuhoni Fishing Group</h5>
+                        <p class="card-text">Focused on sustainable fishing practices that protect marine biodiversity while supporting local fishermen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadzuhoni Beekeeping Group</h5>
+                        <p class="card-text">Engages in mangrove-based beekeeping, producing high-quality honey and promoting conservation through economic activities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadzuhoni Ecotourism Group</h5>
+                        <p class="card-text">Promotes eco-friendly tourism, offering educational tours that highlight the importance of mangrove conservation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-lg-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Kadzuhoni Sports and Culture Group</h5>
+                        <p class="card-text">Fosters community bonding through sports and cultural activities, encouraging youth engagement in conservation efforts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Salt Making Group</h5>
+                        <p class="card-text">Focuses on sustainable salt-making practices, utilizing natural resources from the mangrove ecosystem responsibly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Strengthening Community and Environment</h2>
+                <p>By creating these groups, we provide sustainable income-generating opportunities, improve community well-being, and foster a deep connection between our people and the environment.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static "images/beekeeping.jfif" %}" alt="Community Engagement" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Environmental Education and Advocacy</h2>
+                <p>Through workshops, community meetings, and outreach programs, we raise awareness about the importance of mangroves, climate change, and conservation efforts. Our mission is to continue expanding our impact, creating a sustainable future for both the community and the environment.</p>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Looking Ahead</h2>
+                <p>We are committed to planting more trees, growing our nurseries, and involving even more community members in our conservation efforts. Together, we are shaping a better future for our community and the environment that sustains us.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

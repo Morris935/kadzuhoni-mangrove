@@ -1,0 +1,147 @@
+<!-- hotel/templates/hotel/contact.html -->
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+{% block title %}
+Ecotourism - Kadzuhoni Mangrove Conservation
+{% endblock %}
+
+{% block content %}
+
+    <!-- Page Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Ecotourism Services</h1>
+            <p class="lead">Explore the Beauty of Mangroves While Supporting Conservation</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Ecotourism Initiatives</h2>
+                <p>At <strong>Kadzuhoni Mangrove Conservation</strong>, we promote responsible ecotourism that enables visitors to experience the incredible biodiversity of mangrove ecosystems. Our guided tours offer an immersive experience while educating tourists on the importance of mangrove conservation.</p>
+                <p>Join us for eco-friendly excursions that include boat rides, bird watching, nature walks, and cultural interactions with the local community.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static "images/ecotourism.jfif" %}" alt="Ecotourism" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecotourism Activities Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Ecotourism Activities</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Boat Tours</h5>
+                            <p class="card-text">Enjoy a peaceful boat ride through the mangrove forests, witnessing stunning flora and fauna unique to this ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Bird Watching</h5>
+                            <p class="card-text">Discover a variety of bird species that thrive in the mangrove habitat. Our guided tours offer an intimate look at their nesting and feeding behaviors.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Walks</h5>
+                            <p class="card-text">Take a nature walk through the mangrove forest, where you can explore the ecosystem up close and learn about the local wildlife and plant species.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conservation Impact Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Ecotourism's Impact on Conservation</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Ecotourism plays a crucial role in our conservation efforts. The revenue generated from eco-tours is reinvested into our mangrove restoration projects and supports community development. By engaging in responsible tourism, visitors directly contribute to the preservation of mangroves, wildlife, and local culture.</p>
+                <p>We are committed to promoting sustainable tourism practices that minimize environmental impact and maximize positive social and economic outcomes for the community.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{% static "images/ecotourism-2.jfif" %}" alt="Conservation Impact" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Testimonials Section -->
+    <section class="bg-secondary text-white py-5">
+        <div class="container text-center">
+            <h2>What Our Visitors Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Stoney Morris</h5>
+                            <p class="card-text">"The boat tour was breathtaking! Seeing the mangroves up close was such a unique experience. It’s amazing to see how conservation and tourism can work together."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Marco Matteo</h5>
+                            <p class="card-text">"I loved the mangrove walk. The guides were so knowledgeable, and it felt great knowing that my visit was helping protect the environment."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorenzo Luca</h5>
+                            <p class="card-text">"Bird watching in the mangroves was a highlight of my trip! The diversity of birdlife is astounding. This is truly a gem of nature."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Book a Tour Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Book Your Ecotourism Experience</h2>
+        <p class="text-center">Join us in promoting sustainable tourism and supporting mangrove conservation. Book your tour today!</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Mangrove Boat Tour</h5>
+                        <p class="card-text">Duration: 2 hours | Price: Ksh. 3,000 per person</p>
+                        <a href="{% url "contact" %}" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Bird Watching Tour</h5>
+                        <p class="card-text">Duration: 3 hours | Price: Kshs. 2,500 per person</p>
+                        <a href="{% url "contact" %}" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Mangrove Nature Walk</h5>
+                        <p class="card-text">Duration: 1.5 hours | Price: Kshs. 2,000 per person</p>
+                        <a href="{% url "contact" %}" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

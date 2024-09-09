@@ -1,0 +1,112 @@
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+
+{% block title %}Community Education and Outreach{% endblock %}
+{% block content %}
+    <!-- Page Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1>Community Education & Outreach</h1>
+            <p class="lead">Empowering Communities Through Knowledge & Awareness</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Building Awareness and Engaging Communities</h2>
+                <p>At <strong>Kadzuhoni Mangrove Conservation</strong>, we believe that education is the foundation for long-term environmental protection. Our Community Education & Outreach programs are designed to empower local residents with the knowledge and skills they need to become active participants in mangrove conservation efforts.</p>
+                <p>By focusing on hands-on training, workshops, and educational campaigns, we ensure that the entire community—from children to adults—understands the critical role mangroves play in their lives and how they can help protect these vital ecosystems.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Community Education" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Outreach Initiatives Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Key Outreach Initiatives</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mangrove Awareness Campaigns</h5>
+                            <p class="card-text">We conduct awareness campaigns in schools, villages, and through local media to spread the message of mangrove conservation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Workshops & Trainings</h5>
+                            <p class="card-text">We host workshops for community members on sustainable livelihoods, conservation practices, and the importance of mangroves.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">School Outreach Programs</h5>
+                            <p class="card-text">Our team works with local schools to educate the next generation about the environment and how they can contribute to mangrove conservation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Story Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Impact in the Community</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Since the launch of our Community Education & Outreach program, we have reached thousands of community members, raising awareness about the critical importance of mangrove ecosystems. Through targeted workshops, we have trained hundreds of people in sustainable practices that benefit both their livelihoods and the environment.</p>
+                <p>Our school outreach programs have educated children about mangrove conservation, planting the seeds of environmental stewardship in the next generation. We believe that by engaging communities at all levels, we can foster a culture of conservation that ensures the protection of mangroves for years to come.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Impact in Community" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Get Involved Section -->
+    <section class="bg-secondary text-white py-5">
+        <div class="container text-center">
+            <h2>Get Involved in Our Outreach Programs</h2>
+            <p>There are many ways to help make a difference in your community and protect the environment:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Volunteer</h5>
+                            <p class="card-text">Join our team of volunteers and help us run educational programs and awareness campaigns.</p>
+                            <a href="{% url 'volunteer' %}" class="btn btn-outline-light">Volunteer Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Become an Ambassador</h5>
+                            <p class="card-text">Spread the word in your community and help us reach more people with our message of conservation.</p>
+                            <a href="{% url 'impact' %}" class="btn btn-outline-light">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-sm mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Donate</h5>
+                            <p class="card-text">Your donations support the development of educational materials, workshops, and campaigns.</p>
+                            <a href="{% url 'donate' %}" class="btn btn-outline-light">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

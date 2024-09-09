@@ -1,0 +1,72 @@
+<!-- hotel/templates/hotel/about.html -->
+{% extends 'mangrove/base.html' %}
+{% load static %}
+
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<header class="bg-success text-white text-center py-5">
+    <div class="container">
+        <h1>About Kadzuhoni Mangrove Conservation</h1>
+        <p>Preserving our mangrove forests for future generations</p>
+    </div>
+</header>
+
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Our Mission</h2>
+            <p>
+                our mission is to protect and restore mangrove 
+                ecosystems in the coastal regions of Kenya. 
+                We believe in the power of community-driven 
+                conservation efforts and dedication to raising awareness about the importance of 
+                mangroves will maintain biodiversity, mitigate climate change, and support local 
+                livelihoods.
+            </p>
+            <h2>Who We Are</h2>
+            <p>
+                Kadzuhoni Mangrove Conservation is a registered Community-Based Organization (EST - 2023) 
+                committed to safeguarding mangrove ecosystems. Our team is composed of passionate 
+                environmentalists, local leaders, scientists, and volunteers, all working together to 
+                ensure that mangrove forests continue to benefit both nature and people - Nature Matters to all of us.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static "images/mangrove-3.jfif" %}" class="img-fluid rounded" alt="Mangrove Forest">
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h3>What We Do</h3>
+                <p>
+                    We engage in various activities such as mangrove reforestation, community education, 
+                    and sustainable livelihood projects to ensure the long-term health of our coastal 
+                    ecosystems.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h3>Why Mangroves Matter</h3>
+                <p>
+                    Mangroves play a crucial role in protecting coastlines from erosion, providing 
+                    habitats for marine life, and acting as carbon sinks. Their conservation is vital 
+                    for ecological balance and community well-being.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h3>Get Involved</h3>
+                <p>
+                    Join us in our efforts to conserve mangroves! Whether through volunteering, 
+                    donations, or spreading the word, your support is valuable in making a 
+                    positive impact.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
